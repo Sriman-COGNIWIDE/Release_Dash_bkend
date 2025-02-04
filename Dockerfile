@@ -2,8 +2,8 @@ FROM python:3.12
 
 WORKDIR /App
 
-COPY /backend/requirements.txt .
-COPY /backend/. .
+COPY /Backend/requirements.txt .
+COPY /Backend/. .
 
 RUN apt-get update && apt-get install -y \
     curl \

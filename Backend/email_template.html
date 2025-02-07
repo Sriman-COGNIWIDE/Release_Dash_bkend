@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+        }
+        .otp {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #007bff;
+            margin: 20px 0;
+        }
+        .footer {
+            font-size: 12px;
+            text-align: left;
+            color: #666;
+        }
+        .footer strong{
+            color: #666;
+        } 
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="header">Hello {{firstname}},</p>
+        <p>Your OTP for account verification is:</p>
+        <p class="otp">{{otp}}</p>
+        <p>This OTP is valid for <strong>10 minutes</strong>.</p>
+        <p>If you did not request this, please ignore this email.</p>
+        <p>Regards,<br>Pairpoint team <br></p><br>
+        <p class="footer">
+            <a href="http://k8s-rdfronte-rdfronte-ea07a2969d-a4fd1b6acfa1982b.elb.eu-west-2.amazonaws.com/"><img src="./pairpoint.png"><br></a>
+            <br>
+            
+                <strong><b>Confidentiality Notice:</b></strong><br>
+
+                    This email and any attachments may contain confidential and privileged information intended solely for the use of the individual or entity to whom they are addressed. If you are not the intended recipient, you are hereby notified that any dissemination, distribution, copying, or use of this email or its contents is strictly prohibited. If you have received this email in error, please notify the sender immediately by replying to this email and delete the original message and all copies from your system.<br>
+                <strong><b>Disclaimer:</b></strong><br>
+                    
+                    The views and opinions expressed in this email are those of the sender and do not necessarily reflect the official policy or position of Pairpoint. The information provided in this email is intended only as general information and may not be relied upon as legal or professional advice. Cogniwide Technologies Private Limited accepts no liability for any damage caused by this email or its attachments due to viruses, interception, corruption, or unauthorized access. It is the recipient’s responsibility to ensure that any attachments are virus-free before opening them.
+            </strong>
+        </p>
+    </div>
+</body>
+</html>

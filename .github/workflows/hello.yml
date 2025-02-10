@@ -1,0 +1,9 @@
+name: hello-dashboard
+on: push
+
+jobs:
+  helo:
+    runs-on: windows
+    steps:
+    - name: Print helo world
+      run: echo "hello RD"

@@ -3,7 +3,7 @@ on: push
 
 jobs:
   helo:
-    runs-on: windows
+    runs-on: windows-latest
     steps:
     - name: Print helo world
       run: echo "hello RD"
